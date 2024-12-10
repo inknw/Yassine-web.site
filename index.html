@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Booster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f7fc;
+        }
+        /* Header */
+        header {
+            background-color: #3c72b3;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            background-image: url('https://source.unsplash.com/1600x900/?study');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        /* Navigation */
+        nav {
+            background-color: #2d4f89;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav a:hover {
+            background-color: #1d3a5f;
+        }
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        /* Motivational Tips Section */
+        .motivation .tip {
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .motivation .tip:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .motivation .tip i {
+            font-size: 2rem;
+            color: #3c72b3;
+            margin-bottom: 10px;
+        }
+        .motivation .tip p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        /* Study Resources Section */
+        .resources .resource {
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+        .resources .resource:hover {
+            transform: scale(1.05);
+            background-color: #f0f4fb;
+        }
+        .resources .resource a {
+            text-decoration: none;
+            color: #3c72b3;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .resources .resource a:hover {
+            color: #1d3a5f;
+        }
+        /* Contact Section */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact button {
+            padding: 12px 30px;
+            background-color: #3c72b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #1d3a5f;
+        }
+        /* Footer */
+        footer {
+            background-color: #2d4f89;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .motivation .tip, .resources .resource {
+                width: calc(50% - 40px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .motivation .tip, .resources .resource {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Study Booster</h1>
+    <p>Enhancing Motivation and Resources for Students</p>
+</header>
+
+<nav>
+    <a href="#motivation">Motivational Tips</a>
+    <a href="#resources">Study Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="motivation">
+  <h2>Motivational Tips</h2>
+  <div class="resources">
+      <div class="resource">
+          <a href="https://pomofocus.io/" target="_blank">pomofocus</a>
+          <p>Set a timer for 25 minutes of focused study followed by a 5-minute break.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.apple.com/ios/do-not-disturb/" target="_blank">Do Not Disturb (iOS)</a>
+          <p>Turn off notifications while studying to avoid distractions.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.androidcentral.com/how-use-do-not-disturb-android-10" target="_blank">Do Not Disturb (Android)</a>
+          <p>Use a phone’s "Do Not Disturb" feature during study time.</p>
+      </div>
+      <div class="resource">
+          <a href="https://trello.com/" target="_blank">Trello</a>
+          <p>Plan your study sessions with specific goals for each one.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.forestapp.cc/" target="_blank">Forest</a>
+          <p>Keep your phone away from your study space to avoid temptation.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.todoist.com/" target="_blank">Todoist</a>
+          <p>Make a to-do list every morning on your phone to keep track of tasks.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.waterminder.com/" target="_blank">WaterMinder</a>
+          <p>Stay hydrated by setting reminders to drink water every 30 minutes.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.headspace.com/" target="_blank">Headspace</a>
+          <p>Practice deep breathing exercises before starting your study session.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.focusatwill.com/" target="_blank">Focus@Will</a>
+          <p>Start studying with the most difficult subject to get it out of the way.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.google.com/calendar" target="_blank">Google Calendar</a>
+          <p>Use your phone’s calendar to plan long-term study goals.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.apple.com/ios/ios-14-preview/#grayscale" target="_blank">Grayscale Mode (iOS)</a>
+          <p>Minimize distractions by keeping your phone screen dark or in grayscale mode.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.calm.com/" target="_blank">Calm</a>
+          <p>Visualize the success of your studies, imagining how good you will feel after completing a task.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.spotify.com/" target="_blank">Spotify</a>
+          <p>Create a playlist of calming or instrumental music to listen to while studying.</p>
+      </div>
+      <div class="resource">
+          <a href="https://keep.google.com/" target="_blank">Google Keep</a>
+          <p>Write down your goals for the day and keep track of your progress.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.fitbit.com/" target="_blank">Fitbit</a>
+          <p>Reward yourself with a small treat after completing a study session.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+          <p>Surround yourself with positive influences and people who encourage you.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.focusmate.com/" target="_blank">Focusmate</a>
+          <p>Break your study sessions into smaller, manageable chunks.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.simplehabit.com/" target="_blank">Simple Habit</a>
+          <p>Turn studying into a habit by doing it at the same time every day.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.evernote.com/" target="_blank">Evernote</a>
+          <p>Keep a notebook to jot down your thoughts or ideas during your study time.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.audible.com/" target="_blank">Audible</a>
+          <p>Try listening to study podcasts or audiobooks to stay motivated.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.strava.com/" target="_blank">Strava</a>
+          <p>Take breaks to do physical exercises like stretching or a quick walk.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.studystack.com/" target="_blank">StudyStack</a>
+          <p>Focus on mastering one concept at a time rather than multitasking.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.meditation.com/" target="_blank">Meditation.com</a>
+          <p>Stay positive even when things seem difficult, and remember that every effort counts.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.mindmup.com/" target="_blank">MindMup</a>
+          <p>Use mind mapping to organize your thoughts and improve memory retention.</p>
+      </div>
+  </div>
+</section>
+
+
+<section id="resources">
+  <h2>Study Resources</h2>
+  <div class="resources">
+      <div class="resource">
+          <a href="https://www.l9ray.com/2023/09/al-moufid-en-mathematiques-2-bac-pc-svt.html" target="_blank">Al Mufid</a>
+          <p>A comprehensive platform for Maths learning. Perfect for understanding topics and practicing complex exercises.</p>
+      </div>
+      <div class="resource">
+          <a href="https://www.scribd.com/document/700943540/Maxi-Math-2bac-Pc-Svt-Tome-1-1" target="_blank">Tom 1</a>
+          <p>Tom is an interactive book where you can find detailed explanations and practice problems for Maths.</p>
+      </div>
+      <div class="resource">
+          <a href="http://www.youtube.com/@biadmostafamathphysiq" target="_blank">biadmostafa</a>
+          <p>biadmostafa is a YouTube channel where you can learn all tricks about Maths and do a lot of exercises to prepare for exams.</p>
+      </div>
+      <div class="resource">
+          <a href="http://www.youtube.com/@Pr_Badr_Mouslim" target="_blank">Cours du soir PC</a>
+          <p>Cours du soir PC is a YouTube channel offering various Physics and Chemistry exercises with corrections to help you pass your exams.</p>
+      </div>
+      <div class="resource">
+          <a href="http://www.youtube.com/@SvtAYYOUBLAMSAF" target="_blank">Pr AYYOUB LAMSAF</a>
+          <p>Pr AYYOUB LAMSAF is a YouTube channel where you can understand your SVT lessons and find answers to all your questions about this subject.</p>
+      </div>
+  </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+        <form action="https://formsubmit.co/taouchyassin@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; TAOUCH Yassine . All rights reserved.</p>
+    <p><a href="mailto:taouchyassin@gmail.com">Email</a> | <a href="https://www.instagram.com/taouch_yassine" target="_blank">Instagram</a></p>
+</footer>
+
+</body>
+</html>
